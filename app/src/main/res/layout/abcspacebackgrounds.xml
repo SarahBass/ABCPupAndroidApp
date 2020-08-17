@@ -21,12 +21,14 @@
             android:src="@drawable/ic_testyosemeteor"/>
     </LinearLayout>
 
-    <View
-        android:id="@+id/workingView"
+    <LinearLayout
+        android:id="@+id/lettersBox"
         android:layout_width="match_parent"
-        android:layout_height="160dp"/>
+        android:layout_height="160dp"
+        android:orientation="horizontal"/>
 
     <LinearLayout
+        android:id="@+id/sunbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
