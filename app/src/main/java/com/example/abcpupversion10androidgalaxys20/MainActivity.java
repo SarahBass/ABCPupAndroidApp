@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.bumptech.glide.Glide;
+
 public class MainActivity extends AppCompatActivity {
     final float scale = 0.95f;
 
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.abcspacebackgrounds);
 
         final ImageView aLetter = new ImageView(this.getApplicationContext());
+
         aLetter.setImageDrawable(getDrawable(R.drawable.ic_button_for_dictionary));
         View lettersBox = (View) findViewById(R.id.lettersBox);
         ((LinearLayout) lettersBox).addView(aLetter);
